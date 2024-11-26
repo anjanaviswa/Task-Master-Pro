@@ -1,1 +1,7 @@
-
+pipeline {
+agent any 
+stages {
+  stages('GitCheckout') {
+       steps {
+         gitbranch: 'main',url: https://github.com/muhannadpv786/Task-Master-Pro.git
+       
